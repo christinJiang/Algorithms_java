@@ -1,5 +1,3 @@
-package context;
-
 /******************************************************************************
  *  Compilation:  javac HopcroftKarp.java
  *  Execution:    java HopcroftKarp V1 V2 E
@@ -12,6 +10,13 @@ package context;
  ******************************************************************************/
 
 import java.util.Iterator;
+
+import edu.princeton.cs.algs4.BipartiteX;
+import edu.princeton.cs.algs4.Graph;
+import edu.princeton.cs.algs4.GraphGenerator;
+import edu.princeton.cs.algs4.Queue;
+import edu.princeton.cs.algs4.Stack;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code HopcroftKarp} class represents a data type for computing a

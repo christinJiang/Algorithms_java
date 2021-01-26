@@ -1,5 +1,3 @@
-package fundamentals;
-
 /******************************************************************************
  *  Compilation:  javac LinearRegression.java
  *  Execution:    java  LinearRegression

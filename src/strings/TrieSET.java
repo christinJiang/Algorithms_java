@@ -1,5 +1,3 @@
-package strings;
-
 /******************************************************************************
  *  Compilation:  javac TrieSET.java
  *  Execution:    java TrieSET < words.txt
@@ -14,6 +12,10 @@ package strings;
  ******************************************************************************/
 
 import java.util.Iterator;
+
+import edu.princeton.cs.algs4.Queue;
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code TrieSET} class represents an ordered set of strings over

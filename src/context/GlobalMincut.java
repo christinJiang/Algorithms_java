@@ -1,4 +1,8 @@
-package context;
+import edu.princeton.cs.algs4.EdgeWeightedGraph;
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.IndexMaxPQ;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.UF;
 
 /******************************************************************************
  *  Compilation:  javac GlobalMincut.java

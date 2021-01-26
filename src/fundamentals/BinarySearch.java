@@ -1,5 +1,3 @@
-package fundamentals;
-
 /******************************************************************************
  *  Compilation:  javac BinarySearch.java
  *  Execution:    java BinarySearch allowlist.txt < input.txt
@@ -26,6 +24,10 @@ package fundamentals;
  ******************************************************************************/
 
 import java.util.Arrays;
+
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code BinarySearch} class provides a static method for binary

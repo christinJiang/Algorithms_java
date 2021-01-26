@@ -1,5 +1,3 @@
-package fundamentals;
-
 /******************************************************************************
  *  Compilation:  javac StaticSetOfInts.java
  *  Execution:    none

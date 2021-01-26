@@ -1,4 +1,4 @@
-package searching;
+import edu.princeton.cs.algs4.StdOut;
 
 /******************************************************************************
  *  Compilation:  javac SparseVector.java

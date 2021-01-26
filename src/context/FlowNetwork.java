@@ -1,4 +1,7 @@
-package context;
+import edu.princeton.cs.algs4.Bag;
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
 
 /******************************************************************************
  *  Compilation:  javac FlowNetwork.java

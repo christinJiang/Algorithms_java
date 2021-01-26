@@ -1,3 +1,6 @@
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdOut;
+
 /******************************************************************************
  *  Compilation:  javac Multiway.java
  *  Execution:    java Multiway input1.txt input2.txt input3.txt ...

@@ -1,4 +1,8 @@
-package context;
+import edu.princeton.cs.algs4.BipartiteX;
+import edu.princeton.cs.algs4.Graph;
+import edu.princeton.cs.algs4.GraphGenerator;
+import edu.princeton.cs.algs4.Queue;
+import edu.princeton.cs.algs4.StdOut;
 
 /******************************************************************************
  *  Compilation:  javac BipartiteMatching.java

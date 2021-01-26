@@ -1,5 +1,3 @@
-package fundamentals;
-
 /******************************************************************************
  *  Compilation:  javac Stack.java
  *  Execution:    java Stack < input.txt
@@ -23,6 +21,9 @@ package fundamentals;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 
 
 /**

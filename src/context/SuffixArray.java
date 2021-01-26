@@ -1,5 +1,3 @@
-package context;
-
 /******************************************************************************
  *  Compilation:  javac SuffixArray.java
  *  Execution:    java SuffixArray < input.txt
@@ -30,6 +28,9 @@ package context;
  ******************************************************************************/
 
 import java.util.Arrays;
+
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code SuffixArray} class represents a suffix array of a string of

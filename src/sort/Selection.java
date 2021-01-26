@@ -23,6 +23,9 @@
 
 import java.util.Comparator;
 
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
+
 /**
  *  The {@code Selection} class provides static methods for sorting an
  *  array using <em>selection sort</em>.

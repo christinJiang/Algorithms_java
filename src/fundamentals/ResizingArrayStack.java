@@ -1,5 +1,3 @@
-package fundamentals;
-
 /******************************************************************************
  *  Compilation:  javac ResizingArrayStack.java
  *  Execution:    java ResizingArrayStack < input.txt
@@ -18,6 +16,9 @@ package fundamentals;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code ResizingArrayStack} class represents a last-in-first-out (LIFO) stack

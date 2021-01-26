@@ -1,5 +1,7 @@
 package context;
 
+import edu.princeton.cs.algs4.StdOut;
+
 /******************************************************************************
  *  Compilation:  javac BTree.java
  *  Execution:    java BTree

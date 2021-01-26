@@ -1,5 +1,3 @@
-package searching;
-
 /******************************************************************************
  *  Compilation:  javac SET.java
  *  Execution:    java SET
@@ -18,6 +16,8 @@ package searching;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.TreeSet;
+
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code SET} class represents an ordered set of comparable keys.

@@ -1,5 +1,3 @@
-package fundamentals;
-
 /******************************************************************************
  *  Compilation:  javac LinkedBag.java
  *  Execution:    java LinkedBag < input.txt
@@ -31,6 +29,9 @@ package fundamentals;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code LinkedBag} class represents a bag (or multiset) of 

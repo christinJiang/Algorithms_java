@@ -1,5 +1,3 @@
-package fundamentals;
-
 /******************************************************************************
  *  Compilation:  javac Point2D.java
  *  Execution:    java Point2D x0 y0 n
@@ -11,6 +9,9 @@ package fundamentals;
 
 import java.util.Arrays;
 import java.util.Comparator;
+
+import edu.princeton.cs.algs4.StdDraw;
+import edu.princeton.cs.algs4.StdRandom;
 
 
 /**

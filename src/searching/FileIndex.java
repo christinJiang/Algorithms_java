@@ -1,5 +1,3 @@
-package searching;
-
 /******************************************************************************
  *  Compilation:  javac FileIndex.java
  *  Execution:    java FileIndex file1.txt file2.txt file3.txt ...
@@ -28,6 +26,10 @@ package searching;
  ******************************************************************************/
 
 import java.io.File;
+
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code FileIndex} class provides a client for indexing a set of files,

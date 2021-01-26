@@ -1,5 +1,3 @@
-package context;
-
 /******************************************************************************
  *  Compilation:  javac Particle.java
  *  Execution:    none
@@ -11,6 +9,9 @@ package context;
  ******************************************************************************/
 
 import java.awt.Color;
+
+import edu.princeton.cs.algs4.StdDraw;
+import edu.princeton.cs.algs4.StdRandom;
 
 /**
  *  The {@code Particle} class represents a particle moving in the unit box,

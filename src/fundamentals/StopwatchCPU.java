@@ -1,5 +1,3 @@
-package fundamentals;
-
 /******************************************************************************
  *  Compilation:  javac StopwatchCPU.java
  *  Execution:    java StopwtachCPU n
@@ -15,6 +13,9 @@ package fundamentals;
  ******************************************************************************/
 
 import java.lang.management.ThreadMXBean;
+
+import edu.princeton.cs.algs4.StdOut;
+
 import java.lang.management.ManagementFactory;
 
 /**

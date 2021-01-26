@@ -1,4 +1,5 @@
-package fundamentals;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
 
 /******************************************************************************
  *  Compilation:  javac Counter.java

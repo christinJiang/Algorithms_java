@@ -1,5 +1,3 @@
-package fundamentals;
-
 /******************************************************************************
  *  Compilation:  javac LinkedQueue.java
  *  Execution:    java LinkedQueue < input.txt
@@ -15,6 +13,9 @@ package fundamentals;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code LinkedQueue} class represents a first-in-first-out (FIFO)

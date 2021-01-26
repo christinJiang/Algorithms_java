@@ -1,5 +1,3 @@
-package context;
-
 /******************************************************************************
  *  Compilation:  javac CollisionSystem.java
  *  Execution:    java CollisionSystem n               (n random particles)
@@ -19,6 +17,10 @@ package context;
  ******************************************************************************/
 
 import java.awt.Color;
+
+import edu.princeton.cs.algs4.MinPQ;
+import edu.princeton.cs.algs4.StdDraw;
+import edu.princeton.cs.algs4.StdIn;
 
 /**
  *  The {@code CollisionSystem} class represents a collection of particles

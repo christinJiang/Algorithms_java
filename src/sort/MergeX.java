@@ -24,6 +24,9 @@
 
 import java.util.Comparator;
 
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
+
 /**
  *  The {@code MergeX} class provides static methods for sorting an
  *  array using an optimized version of mergesort.

@@ -1,5 +1,3 @@
-package fundamentals;
-
 /******************************************************************************
  *  Compilation:  javac Interval1D.java
  *  Execution:    java Interval1D
@@ -11,6 +9,8 @@ package fundamentals;
 
 import java.util.Arrays;
 import java.util.Comparator;
+
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code Interval1D} class represents a one-dimensional interval.

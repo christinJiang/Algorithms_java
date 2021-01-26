@@ -1,4 +1,6 @@
-package strings;
+import edu.princeton.cs.algs4.Queue;
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 
 /******************************************************************************
  *  Compilation:  javac TST.java

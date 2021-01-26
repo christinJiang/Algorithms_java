@@ -1,5 +1,8 @@
 package strings;
 
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
+
 /******************************************************************************
  *  Compilation: javac InplaceMSD.java
  *  Execution:   java InplaceMSD < input.txt

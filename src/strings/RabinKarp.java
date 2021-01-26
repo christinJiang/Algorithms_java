@@ -1,5 +1,3 @@
-package strings;
-
 /******************************************************************************
  *  Compilation:  javac RabinKarp.java
  *  Execution:    java RabinKarp pat txt
@@ -35,6 +33,8 @@ package strings;
 
 import java.math.BigInteger;
 import java.util.Random;
+
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code RabinKarp} class finds the first occurrence of a pattern string

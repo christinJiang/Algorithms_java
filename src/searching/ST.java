@@ -1,5 +1,3 @@
-package searching;
-
 /******************************************************************************
  *  Compilation:  javac ST.java
  *  Execution:    java ST < input.txt
@@ -14,6 +12,9 @@ package searching;
 import java.util.Iterator;
 import java.util.NoSuchElementException;
 import java.util.TreeMap;
+
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code ST} class represents an ordered symbol table of generic

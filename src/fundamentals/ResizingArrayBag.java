@@ -1,5 +1,3 @@
-package fundamentals;
-
 /******************************************************************************
  *  Compilation:  javac ResizingArrayBag.java
  *  Execution:    java ResizingArrayBag
@@ -11,6 +9,8 @@ package fundamentals;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code ResizingArrayBag} class represents a bag (or multiset) of 

@@ -1,72 +1,73 @@
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
+
 /******************************************************************************
- *  Compilation:  javac Shell.java
- *  Execution:    java Shell < input.txt
+ *  Compilation:  javac Quick3way.java
+ *  Execution:    java Quick3way < input.txt
  *  Dependencies: StdOut.java StdIn.java
- *  Data files:   https://algs4.cs.princeton.edu/21elementary/tiny.txt
- *                https://algs4.cs.princeton.edu/21elementary/words3.txt
+ *  Data files:   https://algs4.cs.princeton.edu/23quicksort/tiny.txt
+ *                https://algs4.cs.princeton.edu/23quicksort/words3.txt
  *   
- *  Sorts a sequence of strings from standard input using shellsort.
- *
+ *  Sorts a sequence of strings from standard input using 3-way quicksort.
+ *   
  *  % more tiny.txt
  *  S O R T E X A M P L E
  *
- *  % java Shell < tiny.txt
+ *  % java Quick3way < tiny.txt
  *  A E E L M O P R S T X                 [ one string per line ]
  *    
  *  % more words3.txt
  *  bed bug dad yes zoo ... all bad yet
  *  
- *  % java Shell < words3.txt
+ *  % java Quick3way < words3.txt
  *  all bad bed bug dad ... yes yet zoo    [ one string per line ]
- *
  *
  ******************************************************************************/
 
 /**
- *  The {@code Shell} class provides static methods for sorting an
- *  array using <em>Shellsort</em> with
- *  <a href = "https://oeis.org/A003462"> Knuth's increment sequence</a>
- *  (1, 4, 13, 40, ...). In the worst case, this implementation makes
- *  &Theta;(<em>n</em><sup>3/2</sup>) compares and exchanges to sort
- *  an array of length <em>n</em>.
- *  <p>
- *  This sorting algorithm is not stable.
- *  It uses &Theta;(1) extra memory (not including the input array).
+ *  The {@code Quick3way} class provides static methods for sorting an
+ *  array using quicksort with 3-way partitioning.
  *  <p>
  *  For additional documentation, see
- *  <a href="https://algs4.cs.princeton.edu/21elementary">Section 2.1</a> of
- *  <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
- *  
+ *  <a href="https://algs4.cs.princeton.edu/23quicksort">Section 2.3</a>
+ *  of <i>Algorithms, 4th Edition</i> by Robert Sedgewick and Kevin Wayne.
+ *
  *  @author Robert Sedgewick
  *  @author Kevin Wayne
  */
-public class Shell {
+public class Quick3way {
 
   // This class should not be instantiated.
-  private Shell() { }
+  private Quick3way() { }
 
   /**
    * Rearranges the array in ascending order, using the natural order.
    * @param a the array to be sorted
    */
   public static void sort(Comparable[] a) {
-      int n = a.length;
-
-      // 3x+1 increment sequence:  1, 4, 13, 40, 121, 364, 1093, ... 
-      int h = 1;
-      while (h < n/3) h = 3*h + 1; 
-
-      while (h >= 1) {
-          // h-sort the array
-          for (int i = h; i < n; i++) {
-              for (int j = i; j >= h && less(a[j], a[j-h]); j -= h) {
-                  exch(a, j, j-h);
-              }
-          }
-          assert isHsorted(a, h); 
-          h /= 3;
-      }
+      StdRandom.shuffle(a);
+      sort(a, 0, a.length - 1);
       assert isSorted(a);
+  }
+
+  // quicksort the subarray a[lo .. hi] using 3-way partitioning
+  private static void sort(Comparable[] a, int lo, int hi) { 
+      if (hi <= lo) return;
+      int lt = lo, gt = hi;
+      Comparable v = a[lo];
+      int i = lo + 1;
+      while (i <= gt) {
+          int cmp = a[i].compareTo(v);
+          if      (cmp < 0) exch(a, lt++, i++);
+          else if (cmp > 0) exch(a, i, gt--);
+          else              i++;
+      }
+
+      // a[lo..lt-1] < v = a[lt..gt] < a[gt+1..hi]. 
+      sort(a, lo, lt-1);
+      sort(a, gt+1, hi);
+      assert isSorted(a, lo, hi);
   }
 
 
@@ -92,17 +93,16 @@ public class Shell {
   *  Check if array is sorted - useful for debugging.
   ***************************************************************************/
   private static boolean isSorted(Comparable[] a) {
-      for (int i = 1; i < a.length; i++)
+      return isSorted(a, 0, a.length - 1);
+  }
+
+  private static boolean isSorted(Comparable[] a, int lo, int hi) {
+      for (int i = lo + 1; i <= hi; i++)
           if (less(a[i], a[i-1])) return false;
       return true;
   }
 
-  // is the array h-sorted?
-  private static boolean isHsorted(Comparable[] a, int h) {
-      for (int i = h; i < a.length; i++)
-          if (less(a[i], a[i-h])) return false;
-      return true;
-  }
+
 
   // print array to standard output
   private static void show(Comparable[] a) {
@@ -112,14 +112,14 @@ public class Shell {
   }
 
   /**
-   * Reads in a sequence of strings from standard input; Shellsorts them; 
-   * and prints them to standard output in ascending order. 
+   * Reads in a sequence of strings from standard input; 3-way
+   * quicksorts them; and prints them to standard output in ascending order. 
    *
    * @param args the command-line arguments
    */
   public static void main(String[] args) {
       String[] a = StdIn.readAllStrings();
-      Shell.sort(a);
+      Quick3way.sort(a);
       show(a);
   }
 

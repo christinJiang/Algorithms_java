@@ -1,5 +1,3 @@
-package fundamentals;
-
 /******************************************************************************
  *  Compilation:  javac Transaction.java
  *  Execution:    java Transaction
@@ -11,6 +9,8 @@ package fundamentals;
 
 import java.util.Arrays;
 import java.util.Comparator;
+
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code Transaction} class is an immutable data type to encapsulate a

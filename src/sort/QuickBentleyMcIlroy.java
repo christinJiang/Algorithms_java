@@ -1,3 +1,6 @@
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
+
 /******************************************************************************
  *  Compilation:  javac QuickBentleyMcIlroy.java
  *  Execution:    java QuickBentleyMcIlroy < input.txt

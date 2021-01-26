@@ -1,4 +1,4 @@
-package fundamentals;
+import edu.princeton.cs.algs4.StdOut;
 
 /******************************************************************************
  *  Compilation:  javac Stopwatch.java

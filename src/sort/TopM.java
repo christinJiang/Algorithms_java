@@ -1,3 +1,8 @@
+import edu.princeton.cs.algs4.Stack;
+import edu.princeton.cs.algs4.StdIn;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.Transaction;
+
 /******************************************************************************
  *  Compilation:  javac TopM.java
  *  Execution:    java TopM m < input.txt

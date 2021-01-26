@@ -1,4 +1,5 @@
-package strings;
+import edu.princeton.cs.algs4.BinaryStdIn;
+import edu.princeton.cs.algs4.BinaryStdOut;
 
 /******************************************************************************
  *  Compilation:  javac Genome.java

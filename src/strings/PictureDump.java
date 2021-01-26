@@ -1,5 +1,3 @@
-package strings;
-
 /******************************************************************************
  *  Compilation:  javac PictureDump.java
  *  Execution:    java PictureDump width height < file
@@ -17,6 +15,9 @@ package strings;
  ******************************************************************************/
 
 import java.awt.Color;
+
+import edu.princeton.cs.algs4.BinaryStdIn;
+import edu.princeton.cs.algs4.Picture;
 
 
 /**

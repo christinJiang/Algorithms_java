@@ -1,5 +1,3 @@
-package fundamentals;
-
 /******************************************************************************
  *  Compilation:  javac ThreeSumFast.java
  *  Execution:    java ThreeSumFast input.txt
@@ -42,6 +40,9 @@ package fundamentals;
  ******************************************************************************/
 
 import java.util.Arrays;
+
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code ThreeSumFast} class provides static methods for counting

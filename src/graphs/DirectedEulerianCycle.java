@@ -1,5 +1,3 @@
-package graphs;
-
 /******************************************************************************
  *  Compilation:  javac DirectedEulerianCycle.java
  *  Execution:    java DirectedEulerianCycle V E
@@ -12,6 +10,11 @@ package graphs;
  ******************************************************************************/
 
 import java.util.Iterator;
+
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.Stack;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
 
 /**
  *  The {@code DirectedEulerianCycle} class represents a data type

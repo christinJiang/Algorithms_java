@@ -1,5 +1,7 @@
 package context;
 
+import edu.princeton.cs.algs4.EdgeWeightedDigraph;
+
 /******************************************************************************
  *  Compilation:  javac AssignmentProblem.java
  *  Execution:    java AssignmentProblem n

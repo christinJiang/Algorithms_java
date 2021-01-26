@@ -1,5 +1,3 @@
-package graphs;
-
 /******************************************************************************
  *  Compilation:  javac Graph.java        
  *  Execution:    java Graph input.txt
@@ -37,6 +35,11 @@ package graphs;
  ******************************************************************************/
 
 import java.util.NoSuchElementException;
+
+import edu.princeton.cs.algs4.Bag;
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.Stack;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code Graph} class represents an undirected graph of vertices

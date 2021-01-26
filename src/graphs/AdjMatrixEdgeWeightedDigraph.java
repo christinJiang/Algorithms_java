@@ -1,5 +1,3 @@
-package graphs;
-
 /******************************************************************************
  *  Compilation:  javac AdjMatrixEdgeWeightedDigraph.java
  *  Execution:    java AdjMatrixEdgeWeightedDigraph V E
@@ -12,6 +10,9 @@ package graphs;
 
 import java.util.Iterator;
 import java.util.NoSuchElementException;
+
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
 
 /**
  *  The {@code AdjMatrixEdgeWeightedDigraph} class represents a edge-weighted

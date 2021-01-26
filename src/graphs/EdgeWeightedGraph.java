@@ -1,5 +1,3 @@
-package graphs;
-
 /******************************************************************************
  *  Compilation:  javac EdgeWeightedGraph.java
  *  Execution:    java EdgeWeightedGraph filename.txt
@@ -25,6 +23,12 @@ package graphs;
  ******************************************************************************/
 
 import java.util.NoSuchElementException;
+
+import edu.princeton.cs.algs4.Bag;
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.Stack;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
 
 /**
  *  The {@code EdgeWeightedGraph} class represents an edge-weighted

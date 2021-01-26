@@ -1,4 +1,7 @@
-package graphs;
+import edu.princeton.cs.algs4.Queue;
+import edu.princeton.cs.algs4.Stack;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
 
 /******************************************************************************
  *  Compilation:  javac EulerianCycle.java

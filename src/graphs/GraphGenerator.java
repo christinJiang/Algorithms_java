@@ -1,4 +1,7 @@
-package graphs;
+import edu.princeton.cs.algs4.MinPQ;
+import edu.princeton.cs.algs4.SET;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
 
 /******************************************************************************
  *  Compilation:  javac GraphGenerator.java

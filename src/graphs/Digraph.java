@@ -1,5 +1,3 @@
-package graphs;
-
 /******************************************************************************
  *  Compilation:  javac Digraph.java
  *  Execution:    java Digraph filename.txt
@@ -30,6 +28,11 @@ package graphs;
  ******************************************************************************/
 
 import java.util.NoSuchElementException;
+
+import edu.princeton.cs.algs4.Bag;
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.Stack;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code Digraph} class represents a directed graph of vertices

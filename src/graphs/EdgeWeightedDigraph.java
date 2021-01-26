@@ -1,5 +1,3 @@
-package graphs;
-
 /******************************************************************************
  *  Compilation:  javac EdgeWeightedDigraph.java
  *  Execution:    java EdgeWeightedDigraph digraph.txt
@@ -13,6 +11,12 @@ package graphs;
  ******************************************************************************/
 
 import java.util.NoSuchElementException;
+
+import edu.princeton.cs.algs4.Bag;
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.Stack;
+import edu.princeton.cs.algs4.StdOut;
+import edu.princeton.cs.algs4.StdRandom;
 
 /**
  *  The {@code EdgeWeightedDigraph} class represents a edge-weighted

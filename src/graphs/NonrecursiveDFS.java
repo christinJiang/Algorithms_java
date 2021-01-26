@@ -1,5 +1,3 @@
-package graphs;
-
 /******************************************************************************
  *  Compilation:  javac NonrecursiveDFS.java
  *  Execution:    java NonrecursiveDFS graph.txt s
@@ -38,6 +36,10 @@ package graphs;
  ******************************************************************************/
 
 import java.util.Iterator;
+
+import edu.princeton.cs.algs4.In;
+import edu.princeton.cs.algs4.Stack;
+import edu.princeton.cs.algs4.StdOut;
 
 /**
  *  The {@code NonrecursiveDFS} class represents a data type for finding
